@@ -15,12 +15,11 @@ export default function Home() {
       >
         <div className="max-w-3xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold">
-            あなたの一歩が、世界を動かす。
+            日常を、冒険に。
           </h1>
           <p className="mt-4 text-lg md:text-xl leading-relaxed">
-            MiniQuestは「映える瞬間」ではなく、<br />
-            誰も見ていなかった“努力の過程”に光を当てる、新しい挑戦の場。<br />
-            ひとりの小さな一歩が仲間とつながり、やがて世界を前に進めます。
+            報われない努力なんて、ひとつもない。<br />
+            MiniQuestは、あなたの小さな挑戦を物語に変え、仲間と共に未来を築きます。
           </p>
           <div className="mt-6 flex gap-4 justify-center">
             <button className="rounded-xl bg-white px-6 py-2 font-semibold text-blue-700 shadow hover:bg-gray-100 transition">
