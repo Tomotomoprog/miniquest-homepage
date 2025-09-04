@@ -22,18 +22,26 @@ export default function Home() {
             MiniQuestは、あなたの小さな挑戦を物語に変え、仲間と共に未来を築きます。
           </p>
           <div className="mt-6 flex gap-4 justify-center">
-            <button className="rounded-xl bg-white px-6 py-2 font-semibold text-blue-700 shadow hover:bg-gray-100 transition">
+            <a
+              href="https://miniquest-web.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl bg-white px-6 py-2 font-semibold text-blue-700 shadow hover:bg-gray-100 transition"
+            >
               ベータに参加する
-            </button>
-            <button className="rounded-xl border border-white/80 px-6 py-2 text-white/95 hover:bg-white/10 transition">
+            </a>
+            <a
+              href="#philosophy"
+              className="rounded-xl border border-white/80 px-6 py-2 text-white/95 hover:bg-white/10 transition"
+            >
               理念を読む
-            </button>
+            </a>
           </div>
         </div>
       </section>
 
       {/* ========= Why ========= */}
-      <section id="why" className="w-full bg-white text-gray-800 py-20 md:py-28 px-6 md:px-16 border-t border-gray-100">
+      <section id="why" className="w-full bg-white text-gray-800 py-20 md:py-28 px-6 md:px-16 border-t border-gray-100 scroll-mt-20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-10">なぜ、今MiniQuestなのか</h2>
           <ul className="space-y-6 text-lg leading-relaxed">
@@ -61,7 +69,7 @@ export default function Home() {
       </section>
 
       {/* ========= What ========= */}
-      <section id="what" className="w-full bg-gray-50 py-20 md:py-28 px-6 md:px-16 border-t border-gray-100">
+      <section id="what" className="w-full bg-gray-50 py-20 md:py-28 px-6 md:px-16 border-t border-gray-100 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">MiniQuestの4つの仕組み</h2>
 
@@ -111,7 +119,7 @@ export default function Home() {
       </section>
 
       {/* ========= How it works ========= */}
-      <section id="how" className="w-full bg-gray-50 py-20 md:py-28 px-6 md:px-16 border-t border-gray-100">
+      <section id="how" className="w-full bg-gray-50 py-20 md:py-28 px-6 md:px-16 border-t border-gray-100 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">MiniQuestの使い方</h2>
 
@@ -149,10 +157,10 @@ export default function Home() {
       </section>
 
       {/* ========= Impact ========= */}
-      <section id="impact" className="w-full bg-white py-20 md:py-28 px-6 md:px-16 border-t border-gray-100">
+      <section id="impact" className="w-full bg-white py-20 md:py-28 px-6 md:px-16 border-t border-gray-100 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4">小さな挑戦が、世界を変える</h2>
-          <p className="text-center text-gray-600 mb-12">
+        <p className="text-center text-gray-600 mb-12">
             数字は“自慢”ではなく、“希望”の指標です。
           </p>
 
@@ -164,34 +172,57 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ========= Philosophy（差し込み） ========= */}
+      <section id="philosophy" className="bg-gradient-to-br from-green-50 to-green-100 py-20 md:py-28 px-6 md:px-16 border-t border-gray-100 scroll-mt-20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">理念</h2>
+          <div className="text-lg text-gray-700 leading-relaxed space-y-6">
+            <p>
+              　「報われない努力なんて、ひとつもない。」この言葉は、私自身の経験から生まれたものであり、MiniQuestという挑戦の場を立ち上げる原動力になっています。
+            </p>
+            <p>
+              　私たちが生きるこの社会は、成果や「映える瞬間」ばかりが評価される構造に偏りすぎています。SNSを開けば、成功談や輝かしい結果ばかりが並び、その裏にある無数の挑戦や失敗は見えなくなってしまいました。その結果、人々は努力の過程に価値を感じられず、孤独な挑戦をやめてしまうことすらあります。若者の中には「自分には何もできない」と無力感を抱き、生きがいを見失ってしまう人さえいます。
+            </p>
+            <p>
+              　私自身もそうでした。努力が結果に結びつかず、周囲に理解されず、何度も心が折れそうになった経験があります。けれど、同じように挑戦を続ける仲間の姿や、ほんの小さな共感の言葉が、何度も私を前へと押し出してくれました。挑戦の過程は決して無駄ではなく、誰かと共有されることで確かに価値を持つのだと気づいたのです。
+            </p>
+            <p>
+              　MiniQuestは、こうした想いから生まれました。私たちは、日常の小さな挑戦を物語として残し、仲間と共感を分かち合える仕組みをつくります。大切なのは、結果だけではなく過程に光を当てること。そして、孤独な努力を「一人の戦い」で終わらせず、仲間とつながることで「続けられる力」に変えることです。
+            </p>
+            <p>
+              　私たちが掲げる価値観は、「過程に拍手を送ること」「共感でつながること」「一歩が未来を変えること」。これは単なるサービスのコンセプトではなく、私たちが社会に対して果たしたい使命そのものです。
+            </p>
+            <p>
+              　MiniQuestが広がれば、世界中で小さな挑戦が共鳴し合い、教育格差の解消、環境問題への取り組み、貧困や孤独といった課題に立ち向かう力が生まれます。一人の挑戦は小さくても、共感でつながれば、やがて社会を変える原動力になるのです。
+            </p>
+            <p>
+              　MiniQuestは単なるSNSではありません。それは、挑戦を物語に変える新しい文化であり、誰もが主人公になれる舞台です。私たちは挑戦するすべての人に寄り添い、その一歩を未来につなげることで、世界を笑顔で満たしていきます。
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ========= Founder Story ========= */}
-      <section id="founder" className="w-full bg-gray-50 py-20 md:py-28 px-6 md:px-16 border-t border-gray-100">
+      <section id="founder" className="w-full bg-gray-50 py-20 md:py-28 px-6 md:px-16 border-t border-gray-100 scroll-mt-20">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold mb-6">結果ではなく、過程に拍手を</h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              努力が報われず、挑戦をやめたくなる瞬間を私は何度も経験しました。
-              もしその過程が記録され、誰かに見守られていたら…もっと前に進めたかもしれない。
+              努力が報われず、挑戦をやめたくなる瞬間を私は何度も経験しました。もしその過程が記録され、誰かに見守られていたら…もっと前に進めたかもしれない。
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              MiniQuestは、そんな思いから生まれました。<br />
-              結果ではなく過程を讃え、仲間と共に歩むことで、挑戦は続けられる。<br />
-              その小さな積み重ねこそが、世界を変える大きな力になると信じています。
+              MiniQuestは、そんな思いから生まれました。結果ではなく過程を讃え、仲間と共に歩むことで、挑戦は続けられる。小さな積み重ねこそが、世界を変える大きな力になると信じています。
             </p>
             <p className="mt-6 font-semibold text-blue-700">Founder, 向井智康</p>
           </div>
           <div className="flex justify-center">
-            <img
-              src="https://placehold.co/400x300?text=Founder+Image"
-              alt="Founder story"
-              className="rounded-2xl shadow-md"
-            />
+            <div className="w-[400px] h-[300px] rounded-2xl bg-gradient-to-br from-blue-100 to-white border border-blue-100 shadow-md" />
           </div>
         </div>
       </section>
 
       {/* ========= Company ========= */}
-      <section id="company" className="w-full bg-white py-20 md:py-28 px-6 md:px-16 border-t border-gray-100">
+      <section id="company" className="w-full bg-white py-20 md:py-28 px-6 md:px-16 border-t border-gray-100 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Company</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -246,11 +277,66 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ========= Contact ========= */}
+      <section id="contact" className="w-full bg-gray-50 py-20 md:py-28 px-6 md:px-16 border-t border-gray-100 scroll-mt-20">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-8">Contact</h2>
+          <p className="text-center text-gray-700 mb-12">
+            ご質問・ご相談・取材依頼など、お気軽にご連絡ください。
+          </p>
+
+          <form className="space-y-6">
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                お名前
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                className="mt-2 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                required
+              />
+            </div>
+
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                メールアドレス
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                className="mt-2 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                required
+              />
+            </div>
+
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                メッセージ
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows={5}
+                className="mt-2 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                required
+              />
+            </div>
+
+            <div className="text-center">
+              <button
+                type="submit"
+                className="rounded-lg bg-blue-600 text-white px-6 py-2 font-semibold hover:bg-blue-700 transition"
+              >
+                送信する
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
   );
 }
-
-
-
-
-
