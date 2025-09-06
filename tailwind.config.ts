@@ -7,6 +7,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/images/hero-background.png')",
+      },
       fontFamily: {
         sans: ["var(--font-sans)"],
       },
