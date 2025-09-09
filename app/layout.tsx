@@ -9,7 +9,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      <body className="min-h-screen flex flex-col">
+      {/* bodyのクラスからflex関連を削除 */}
+      <body className="min-h-screen">
         {/* ===== ヘッダー ===== */}
         <header className="fixed top-0 z-50 w-full bg-black/50 backdrop-blur-sm border-b border-gray-800/50 h-14 transition-colors duration-300">
           <div className="max-w-7xl mx-auto h-full flex items-center justify-between px-4">
@@ -27,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </nav>
 
             {/* 右：ボタン */}
-            <a 
+            <a
               href="https://miniquest-web.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
@@ -38,8 +39,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
 
-        {/* ===== ページ本体 ===== */}
-        <main className="flex-1">{children}</main>
+        {/* ===== ページ本体(mainタグを削除) ===== */}
+        {children}
 
         {/* ===== フッター ===== */}
         <footer className="bg-gray-900 text-white border-t border-gray-800">
@@ -60,7 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <li><a href="#company" className="hover:text-white">会社情報</a></li>
               </ul>
             </div>
-            
+
             {/* ソーシャル */}
             <div className="col-span-1">
                <h4 className="font-semibold mb-3 text-gray-300">フォローする</h4>
