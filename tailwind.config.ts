@@ -9,6 +9,8 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('/images/hero-background.png')",
+        // 👇 新しいヒーロー画像用のクラスを追加
+        'hero-illustration': "url('/hero-illustration.png')",
       },
       fontFamily: {
         sans: ["var(--font-sans)"],

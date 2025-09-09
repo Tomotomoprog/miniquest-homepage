@@ -10,8 +10,8 @@ export default function Home() {
           min-h-screen
           px-6 overflow-hidden
           bg-cover bg-center bg-no-repeat
+          bg-hero-illustration
         "
-        style={{ backgroundImage: `url('/hero-illustration.PNG')` }}
       >
         {/* オーバーレイ */}
         <div className="absolute inset-0 bg-gradient-to-t from-blue-950/80 to-blue-800/60 -z-10"></div>
