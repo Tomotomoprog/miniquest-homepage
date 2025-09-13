@@ -145,27 +145,28 @@ export default function Home() {
             <span className="badge">Founder</span>
             <h2 className="text-3xl md:text-4xl font-bold mt-4">創業者について</h2>
             <p className="mt-4 text-dim">
-              MiniQuestは、自身の経験から「挑戦の可視化」の重要性を痛感した一人のエンジニアによって生まれました。
+              MiniQuestは、結果だけでなく「挑戦の過程」そのものに価値を見出す一人のエンジニアの想いから生まれました。
             </p>
           </div>
-
-          {/* ▼▼▼ 写真なしのデザインに変更 ▼▼▼ */}
+          
           <div className="relative max-w-3xl mx-auto mt-16">
             <div className="absolute -top-4 -left-4 w-32 h-32 bg-brand-100 rounded-full opacity-50 -z-10"></div>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-brand-100 rounded-full opacity-50 -z-10"></div>
-            <div className="card p-8 bg-white/80 backdrop-blur-sm text-center">
-              <div>
+            <div className="card p-8 bg-white/80 backdrop-blur-sm">
+              <div className="text-center">
                 <h3 className="text-2xl font-bold text-brand-600">向井　智康</h3>
                 <p className="mt-1 text-dim font-semibold">代表取締役CEO / エンジニア</p>
-                <div className="mt-4 pt-4 border-t border-line">
-                  <p className="text-sm text-ink leading-relaxed text-left">
-                    「誰もが挑戦者になれる世界」を目指し、プロダクト開発と経営の全てを担う。
-                  </p>
-                </div>
+              </div>
+              <div className="mt-6 pt-6 border-t border-line text-ink leading-relaxed text-left space-y-4">
+                <p>
+                  SNSが「結果」を賞賛する一方で、その裏にある無数の努力や挑戦の「過程」が見過ごされていると感じていました。「すごいね」よりも「わかるよ」という共感が、次の一歩を踏み出す力になる。そんな、誰もが安心して挑戦し、支え合える居場所を作りたいという想いからMiniQuestは生まれました。
+                </p>
+                <p>
+                  日々の小さな挑戦を通して自分を磨き、人との繋がりを大切にし、その優しさの輪を社会に広げていく。このアプリが、あなたにとって自分自身の「器」を広げる旅のパートナーとなることを心から願っています。
+                </p>
               </div>
             </div>
           </div>
-          {/* ▲▲▲ ここまで ▲▲▲ */}
 
         </div>
       </section>
