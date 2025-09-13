@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next"; // Viewport をインポート
 import Link from "next/link";
+import type { ReactNode } from "react"; // ← この行を追加
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -7,7 +8,15 @@ export const metadata: Metadata = {
   description: "小さな挑戦で、世界を前へ。",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+// ↓ viewport設定を追加
+export const viewport: Viewport = {
+  themeColor: "#f0f9ff",
+  width: "device-width",
+  initialScale: 1,
+};
+
+
+export default function RootLayout({ children }: { children: ReactNode }) { // ← React.ReactNode から ReactNode へ変更
   return (
     <html lang="ja">
       <body className="bg-slate-50 text-ink">
@@ -23,8 +32,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <nav className="hidden md:flex gap-2 text-sm text-dim font-medium">
               <Link href="/#what" className="btn btn-ghost">仕組み</Link>
               <Link href="/#how" className="btn btn-ghost">使い方</Link>
-              <Link href="/philosophy" className="btn btn-ghost">理念</Link> {/* 理念ページへのリンクを追加 */}
+              <Link href="/philosophy" className="btn btn-ghost">理念</Link>
               <Link href="/#impact" className="btn btn-ghost">社会インパクト</Link>
+              <Link href="/#feedback" className="btn btn-ghost">ご意見箱</Link>
             </nav>
 
             {/* 右：ボタン */}

@@ -1,9 +1,10 @@
 "use client";
 
+import type { ReactNode } from "react"; // ← この行を追加
 import AnimatedNumber from "./AnimatedNumber";
 import { useInView } from "./useInView";
 
-function Pill({ children }: { children: React.ReactNode }) {
+function Pill({ children }: { children: ReactNode }) { // ← React.ReactNode から ReactNode へ変更
   return (
     <span className="inline-block rounded-full bg-blue-50 text-blue-700 border border-blue-200 px-3 py-1 text-xs font-medium">
       {children}

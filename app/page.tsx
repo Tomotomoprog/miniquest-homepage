@@ -208,6 +208,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ========= Feedback Form (ご意見箱) ========= */}
+      <section id="feedback" className="py-20 md:py-28 px-6 scroll-mt-16">
+        <div className="container">
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="badge">Feedback</span>
+            <h2 className="text-3xl md:text-4xl font-bold mt-4">ご意見箱</h2>
+            <p className="mt-4 text-dim">
+              MiniQuestをより良いアプリにするため、皆様のご意見・ご感想をお聞かせください。
+            </p>
+          </div>
+
+          <div className="card max-w-3xl mx-auto mt-16 p-8">
+            <iframe 
+              src="https://docs.google.com/forms/d/e/1FAIpQLScjExuqmNWHDTT1sclFn-aCzbrteT3loTJaocIo1GrTSmm6Ig/viewform?embedded=true" 
+              width="100%" // レスポンシブ対応のため100%に変更
+              height="846" 
+              frameBorder="0" 
+              marginHeight={0} 
+              marginWidth={0}>
+              読み込んでいます…
+            </iframe>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
